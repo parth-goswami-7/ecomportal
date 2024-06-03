@@ -1,0 +1,261 @@
+.single-product{
+    /* background-color: aqua; */
+    height: fit-content;
+    width: 100%;
+    display: flex;
+   margin: 40px auto;
+   justify-content: center;
+   align-items: center;
+
+
+   @media screen and (max-width: 768px) {
+ 
+    &{
+   flex-direction: column;
+   gap: 30px;
+    }
+        
+        
+        
+    }
+
+
+    .image{
+        width: 50%;
+        
+        display: flex;
+        gap: 10px;
+       align-items: center;
+        padding: 10px 0;
+        flex-direction: column;
+      
+
+        @media screen and (max-width: 768px) {
+ 
+            &{
+        width: 100%;
+            }
+                
+                
+                
+            }
+        
+
+        .big-img{
+width: 70%;
+height: 400px;
+
+@media screen and (max-width: 768px) {
+ 
+    &{
+width: 90%;
+    }
+        
+        
+        
+    }
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+        }
+
+        .small-img{
+            display: flex;
+            gap: 20px;
+
+
+
+            img{
+                height: 100px;
+                width: 100px;
+
+                @media screen and (max-width: 768px) {
+ 
+                    &{
+                width: 50px;
+                height: 50px;
+                    }
+                        
+                        
+                        
+                    }
+            }
+        }
+    }
+
+    .content{
+        width: 50%;
+       
+        padding: 10px 0;
+       align-self: flex-start;
+       
+
+       @media screen and (max-width: 768px) {
+ 
+        &{
+       width: 90%; 
+       margin: 0 auto;    }
+            
+            
+            
+        }
+     
+
+
+        .product-title{
+            line-height: 40px;
+            font-weight: 900;
+            font-size: 24px;
+            letter-spacing: 2px;
+
+        }
+
+        .product-price{
+            display: flex;
+            line-height: 40px;
+            gap: 20px;
+
+            span{
+                font-size: 20px;
+                font-weight: 900;
+
+                &:nth-child(3){
+                    text-decoration: line-through;
+                    color: rgba(0, 0, 0, 0.575);
+                }
+            }
+        }
+
+        p{
+            font-family:sans-serif;
+            max-width: 300px;
+            margin: 20px 0;
+            text-align: justify;
+        }
+
+        .manu{
+            line-height: 40px;
+            font-weight: 900;
+            font-size: 18px;
+            letter-spacing: 2px; 
+        }
+
+        .size{
+            display: flex;
+            gap: 10px;
+            margin: 20px auto;
+
+            span{
+                height: fit-content;
+                cursor: pointer;
+                width: fit-content;
+                padding: 4px 12px;
+                border-radius: 20px;
+                border: 1px solid black;
+                transition: all 0.5s;
+
+                &:hover{
+                    background-color: black;
+                    color: white;
+                }
+
+            }
+        }
+
+        .color{
+            display: flex;
+            gap: 10px;
+            margin: 20px auto;
+
+            span{
+                height: fit-content;
+                cursor: pointer;
+                width: fit-content;
+                padding: 10px;
+                border-radius: 100%;
+                border: 1px solid black;
+                transition: all 0.2s;
+
+                &:hover{
+                    outline: 1px solid black;
+                    outline-offset: 3px;
+                }
+
+               &:nth-child(1){
+                background-color: red;
+               }
+
+               &:nth-child(2){
+                background-color: yellow;
+               }
+
+               &:nth-child(3){
+                background-color: rgb(6, 93, 255);
+               }
+
+            }
+        }
+
+        .btn{
+            display: flex;
+           gap: 15px;
+           margin: 10px auto;
+           font-weight: 700;
+           font-size: 14px;
+
+
+           button{
+            padding: 12px 16px;
+            background-color: transparent;
+            border: 1px solid black;
+            cursor: pointer;
+            transition: all 0.5s ease-in;
+
+            &:hover{
+                background-color: rgba(0, 0, 0, 0.822);
+                color: white;
+                border: 1px solid rgb(0, 0, 0);
+            }
+           }
+        }
+
+        .category{
+            line-height: 40px;
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: 2px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .share{
+            display: flex;
+            gap: 10px;
+            margin: 20px auto;
+
+            span{
+                border-radius:100%;
+                padding: 20px;
+                height: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid black;
+                width: 20px;
+                background-color: black;
+                color: white;
+                cursor: pointer;
+                transition: all 0.5s ease-in;
+
+                &:hover{
+                    background-color: white;
+                    color: black;
+                    border: 1px solid black;
+                }
+
+            }
+        }
+    }
+}

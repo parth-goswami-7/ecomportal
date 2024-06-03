@@ -1,0 +1,62 @@
+.main-payment{
+       
+    height: 500px;
+    width: 50%;
+    max-width: 400px;
+    background-color: white;
+    overflow: auto;
+    padding: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.409),0 0 5px rgba(0, 0, 0, 0.422);
+
+
+
+
+    .payment{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    align-items: end;
+    row-gap: 50px;
+    width: 100%;
+    
+    .payment-method{
+height: 70px;
+width: 70px;
+border: 1px solid rgba(0, 0, 0, 0.523);
+text-align: center;
+
+img{
+    height: 100%;
+    width: 100%;
+}
+    }
+
+  
+
+}
+
+button{
+    padding: 8px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.484);
+margin: 0 auto;
+width: fit-content;
+margin-top: 20px;
+transition: all 0.5s;
+cursor: pointer;
+margin-top: 50px;
+&:hover{
+    background-color: white;
+    color: black;
+}
+
+}
+
+}
