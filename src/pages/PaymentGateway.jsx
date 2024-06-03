@@ -1,7 +1,11 @@
 import React from 'react'
 import './../styles/PaymentPage.scss'
+import { Navigate, useNavigate, useParams } from 'react-router-dom'
 
 const PaymentGateway = () => {
+
+  const navigate = useNavigate()
+
   return (
     <div class="main-payment">
     <h1>Choose a Payment Method</h1>
@@ -39,7 +43,7 @@ const PaymentGateway = () => {
         
         
     </div>
-    <button type="submit" class="pt-4">Proceed to Pay</button>
+    <button type="submit" class="pt-4" onClick={() => navigate(`/ConfimationPage`)}>Proceed to Pay</button>
     </div>
   )
 }

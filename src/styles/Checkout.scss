@@ -1,14 +1,11 @@
-body{
-    margin: 0;
-  }
-  
+
   .checkout-layout{
   background-color: rgb(177, 177, 177);
   padding: 20px 0;
   //height: 100vh;
   display: flex;
   justify-content: space-around;
-  margin: 0 auto;
+  //margin: 0 auto;
   
       
   @media screen and (max-width: 768px) {
@@ -21,9 +18,9 @@ body{
      
     }
 
-    *{
-        margin: 0;
-    }
+    // *{
+    //     margin: 0;
+    // }
     
     // body {
     //     font-family: Arial, sans-serif;

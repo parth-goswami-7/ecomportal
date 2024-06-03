@@ -1,0 +1,170 @@
+
+  .checkout-layout{
+  background-color: rgb(177, 177, 177);
+  padding: 25px 5px;
+  //height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  //margin: 0 auto;
+  
+      
+  @media screen and (max-width: 768px) {
+   
+    &{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    }
+     
+    }
+  
+  .form{
+    width: 50%;
+    height: 90%;
+    background-color: white;
+    margin-right: 5px;    
+  @media screen and (max-width: 768px) {
+   
+    &{
+   width: 90%;
+    }
+     
+    }
+    
+.order{
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img{
+        width: 30%;
+        height: auto;
+        animation: name 0.7s forwards ease-in ;
+    }
+
+    h3{
+        animation: confirm 0.5s forwards ease-in;
+        
+    }
+
+    
+    }
+
+
+    @keyframes name{
+        0%{
+            transform: scale(0) rotate(0deg);
+            opacity: 0.5;
+        }
+
+        100%{
+            transform: scale(1) rotate(360deg);
+            opacity: 1;
+        }
+    }
+
+    @keyframes confirm{
+        0%{
+            transform: scaleY(0) ;
+        }
+    
+        100%{
+            transform: scaleY(1);
+        }
+    }
+
+
+}
+  
+  .payment{
+    background-color: white;
+    //margin-top: 50px;
+    width: 70%;
+    height: 120vh;
+    overflow-y: auto;
+        
+  @media screen and (max-width: 768px) {
+   
+    &{
+      width: 90%;
+    }
+     
+    }
+
+    
+.checkout{
+    border: none !important;
+    //height: 95%;
+    width: unset !important;
+    background-color: white;
+    //padding: 10px;
+    //margin-block: auto;
+
+    h3{
+        font-size: 24px;
+        font-weight: 700;
+       
+
+    }
+
+    .inner{
+      
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;;
+        gap: 10px;
+       
+       
+    .price{
+        display: flex;
+        justify-content: space-between;
+
+        &:nth-child(4){
+            border-top: 1px solid black;
+            padding: 20px 0;
+        }
+
+        &:nth-child(5){
+            justify-content: center;
+            padding: 10px 0;
+            
+
+            input{
+                padding: 8px 12px;
+                border: 1px solid rgba(0, 0, 0, 0.461);
+                width: 200px;
+                
+            }
+
+            button{
+                padding: 8px 12px;
+                border: 1px solid rgba(0, 0, 0, 0.461);
+            }
+        }
+        
+
+        span{
+            font-size: 18px;
+            color: rgba(0, 0, 0, 0.735);
+            font-weight: 900;
+
+         
+        }
+
+        
+    }
+}
+.stable tr th, td{
+        
+    padding-top: 10px;
+}   
+.stable tr th{
+    
+    text-align: left;
+}
+
+}
+  }
+  }

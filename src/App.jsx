@@ -13,6 +13,7 @@ import Searchbar from './components/common/Searchbar';
 import MyContextProvider from './MyContextProvider';
 import Checkout from './pages/Checkout';
 import PaymentGateway from './pages/PaymentGateway';
+import ConfimationPage from './pages/ConfimationPage';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Route path="/Contact" element={<Contact/>}/>
       <Route path="/Checkout" element={<Checkout/>}/>
       <Route path="/PaymentGateway" element={<PaymentGateway/>}/>
+      <Route path="/ConfimationPage" element={<ConfimationPage/>}/>
       <Route path="*" element={<NoPage/>}/>      
     </Routes>
     <Footer/>
