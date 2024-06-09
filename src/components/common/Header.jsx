@@ -360,7 +360,7 @@ const handlemenu = !isDisplay;
 
       <header className="relative bg-white">
         <p className="flex h-10 items-center justify-center bg-indigo-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
-          <Typewriter options={{strings: ['Welcome to our KPCart'], autoStart: true, loop: true}}/>
+          <Typewriter options={{strings: ['Welcome to our KPCart Portal'], autoStart: true, loop: true}}/>
         </p>
 
         <nav aria-label="Top" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
